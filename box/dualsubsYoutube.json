@@ -1,4 +1,5 @@
 {
+
 	"id": "DualSubs.beta.app.sub",
 	"name": "🍿️ DualSubs β",
 	"author": "@DualSubs",
@@ -817,4 +818,5 @@
 				"https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
 			]
 		}
+          ]
 }
