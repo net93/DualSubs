@@ -35,23 +35,23 @@
 					"items": [
 						{
 							"key": "Official",
-							"label": "官方"
+							"label": "Officials"
 						},
 						{
 							"key": "Baidu",
-							"label": "百度翻译"
+							"label": "Baidu Translation"
 						},
 						{
 							"key": "BaiduFanyi",
-							"label": "百度 翻译开放平台"
+							"label": "Baidu Translation Open Platform"
 						},
 						{
 							"key": "Youdao",
-							"label": "有道翻译"
+							"label": "Youdao translation"
 						},
 						{
 							"key": "YoudaoAI",
-							"label": "有道智云 AI开放平台"
+							"label": "Youdao Zhiyun AI Open Platform"
 						},
 						{
 							"key": "Google",
@@ -75,17 +75,21 @@
 						},
 						{
 							"key": "External",
-							"label": "外挂字幕"
+							"label": "Plug-in subtitles"
 						}
 					]
 				},
 				{
 					"id": "@DualSubs.Universal.Settings.Language",
 					"name": "首选语言（兼容）：",
-					"val": "ZH",
+					"val": "VI",
 					"type": "selects",
 					"desc": "选择后会将此语言添加为额外的字幕语言",
 					"items": [
+						{
+							"key": "VI",
+							"label": "VN"
+						},
 						{
 							"key": "ZH",
 							"label": "中文（自动）"
@@ -153,23 +157,23 @@
 					"items": [
 						{
 							"key": "Official",
-							"label": "官方"
+							"label": "Officials"
 						},
 						{
 							"key": "Baidu",
-							"label": "百度翻译"
+							"label": "Baidu Translation"
 						},
 						{
 							"key": "BaiduFanyi",
-							"label": "百度 翻译开放平台"
+							"label": "Baidu Translation Open Platform"
 						},
 						{
 							"key": "Youdao",
-							"label": "有道翻译"
+							"label": "Youdao translation"
 						},
 						{
 							"key": "YoudaoAI",
-							"label": "有道智云 AI开放平台"
+							"label": "Youdao Zhiyun AI Open Platform"
 						},
 						{
 							"key": "Google",
@@ -193,16 +197,20 @@
 						},
 						{
 							"key": "External",
-							"label": "外挂字幕"
+							"label": "Plug-in subtitles"
 						}
 					]
 				},
 				{
 					"id": "@DualSubs.Universal.Settings.Languages[0]",
 					"name": "首选语言：",
-					"val": "ZH",
+					"val": "VI",
 					"type": "selects",
 					"items": [
+						{
+							"key": "VI",
+							"label": "VN"
+						},
 						{
 							"key": "ZH",
 							"label": "中文（自动）"
@@ -265,9 +273,13 @@
 				{
 					"id": "@DualSubs.Universal.Settings.Languages[1]",
 					"name": "次选语言：",
-					"val": "EN",
+					"val": "VI",
 					"type": "selects",
 					"items": [
+						{
+							"key": "VI",
+							"label": "VN"
+						},
 						{
 							"key": "ZH",
 							"label": "中文（自动）"
@@ -707,23 +719,23 @@
 					"items": [
 						{
 							"key": "Official",
-							"label": "官方"
+							"label": "Officials"
 						},
 						{
 							"key": "Baidu",
-							"label": "百度翻译"
+							"label": "Baidu Translation"
 						},
 						{
 							"key": "BaiduFanyi",
-							"label": "百度 翻译开放平台"
+							"label": "Baidu Translation Open Platform"
 						},
 						{
 							"key": "Youdao",
-							"label": "有道翻译"
+							"label": "Youdao Translation"
 						},
 						{
 							"key": "YoudaoAI",
-							"label": "有道智云 AI开放平台"
+							"label": "Youdao Zhiyun AI Open Platform"
 						},
 						{
 							"key": "Google",
@@ -747,7 +759,7 @@
 						},
 						{
 							"key": "External",
-							"label": "外挂字幕"
+							"label": "Plug-in subtitles"
 						}
 					]
 				},
