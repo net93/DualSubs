@@ -3,16 +3,17 @@
 	"id": "DualSubs.beta.app.sub",
 	"name": "🍿️ DualSubs β",
 	"author": "@DualSubs",
-	"description": "流媒体平台字幕增强及双语模块",
+	"description": "Subtitle enhancement and bilingual module on streaming media platforms",
 	"icon": "https://avatars.githubusercontent.com/u/100578089?&v=4",
-	"repo": "https://github.com/DualSubs",
+	"repo": "https://github.com/net93/DualSubs",
 	"apps": [
 		{
 			"id": "DualSubs.Verify.beta",
 			"name": "🍿️ DualSubs: Verify β",
 			"descs_html": [
-				"请参照<a href=\"https://github.com/DualSubs/DualSubs\">DualSubs</a>的使用说明进行配置",
-				"填写完成后别忘点击此页面底端右下角的\"保存\"。"
+				"Please refer to <a href=\"https://github.com/DualSubs/DualSubs\"> Instructions for using DualSubs</a>",
+
+"Don't forget to click 'Save' in the lower right corner of the bottom of this page after completing."
 			],
 			"keys": [
 				"@DualSubs.Verify.Settings"
@@ -20,133 +21,133 @@
 			"settings": [
 				{
 					"id": "@DualSubs.Verify.Settings.GoogleCloud.Method",
-					"name": "[Google Cloud] Translation API 翻译方式",
+					"name": "[Google Cloud] Translation API Translation method",
 					"val": "Part",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Part",
-							"label": "逐段翻译"
+							"label": "Translate paragraph by paragraph"
 						},
 						{
 							"key": "Row",
-							"label": "逐句翻译"
+							"label": "Translate sentence by sentence"
 						}
 					],
-					"desc": "逐段翻译：每128句文本合并发送一次翻译请求，对请求次数或频率限制型API友好，且翻译时会参考上下文；逐句翻译：每句文本都发送一次翻译请求；"
+					"desc": "Paragraph-by-paragraph translation: Each 128 sentences of text is combined to send a translation request, which is friendly to the number or frequency of requests, and the context will be translated with reference; sentence-by-sentence translation: each sentence text sends a translation request;"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.GoogleCloud.Mode",
-					"name": "[Google Cloud] Translation API 认证方式",
+					"name": "[Google Cloud] Translation API Authentication method",
 					"val": "Key",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Key",
-							"label": "密钥"
+							"label": "The key"
 						},
 						{
 							"key": "Token",
-							"label": "令牌"
+							"label": "Token"
 						}
 					],
-					"desc": "验证方式二选一"
+					"desc": "Choose one of two verification methods"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.GoogleCloud.Auth",
-					"name": "[Google Cloud] Translation API 认证密钥",
+					"name": "[Google Cloud] Translation API Authentication key",
 					"val": "",
 					"type": "text",
 					"placeholder": "AIzaSyD6NNneoaqSTL2mE3_S1DNPvzrxwcFLIAY",
-					"desc": "未提供时不会启用此类型字幕"
+					"desc": "This type of subtitles will not be enabled when not available."
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.Azure.Method",
-					"name": "[Microsoft Azure] Translator 翻译方式",
+					"name": "[Microsoft Azure] Translator Translation method",
 					"val": "Part",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Part",
-							"label": "逐段翻译"
+							"label": "Translate paragraph by paragraph
 						},
 						{
 							"key": "Row",
-							"label": "逐句翻译"
+							"label": "Translate sentence by sentence"
 						}
 					],
-					"desc": "逐段翻译：每100句文本合并发送一次翻译请求，对请求次数或频率限制型API友好，且翻译时会参考上下文；逐句翻译：每句文本都发送一次翻译请求；"
+					"desc": "Paragraph-by-paragraph translation: every 100 sentences of text are combined to send a translation request, which is friendly to the number or frequency of requests, and the context will be translated with reference; sentence-by-sentence translation: each sentence text sends a translation request;"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.Azure.Version",
-					"name": "[Microsoft Azure] Translator 版本",
+					"name": "[Microsoft Azure] Translator Version",
 					"val": "Azure",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Azure",
-							"label": "国际版"
+							"label": "International version"
 						},
 						{
 							"key": "AzureCN",
-							"label": "中国版"
+							"label": "Chinese version"
 						}
 					],
-					"desc": "版本二选一"
+					"desc": "Choose one of version two"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.Azure.Region",
-					"name": "[Microsoft Azure] Translator 区域代码",
+					"name": "[Microsoft Azure] Translator Area code",
 					"val": "global",
 					"type": "text",
 					"placeholder": "global",
-					"desc": "如果开通Microsoft Azure Translator时没有选择全球global，则需要填写开通的地区代码，如chinanorth, chinaeast2等"
+					"desc": "If you don't select global when opening Microsoft Azure Translator, you need to fill in the open region code, such as chinanorth, chinaeast2, etc."
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.Azure.Mode",
-					"name": "[Microsoft Azure] Translator 认证方式",
+					"name": "[Microsoft Azure] Translator Authentication method",
 					"val": "Key",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Key",
-							"label": "密钥"
+							"label": "Key"
 						},
 						{
 							"key": "Token",
-							"label": "令牌"
+							"label": "Token"
 						}
 					],
-					"desc": "验证方式二选一"
+					"desc": "Choose one of two verification methods"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.Azure.Auth",
-					"name": "[Microsoft Azure] Translator 认证密钥",
+					"name": "[Microsoft Azure] Translator Authentication key",
 					"val": "",
 					"type": "text",
 					"placeholder": "c3639587ac214f2e917862c80a2b821b",
-					"desc": "未提供时不会启用此类型字幕"
+					"desc": "This type of subtitles will not be enabled when not available"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.DeepL.Method",
-					"name": "[DeepL] API 翻译方式",
+					"name": "[DeepL] API Translation method",
 					"val": "Part",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Part",
-							"label": "逐段翻译"
+							"label": "Translation paragraph by paragraph"
 						},
 						{
 							"key": "Row",
-							"label": "逐句翻译"
+							"label": "Translate sentence by sentence"
 						}
 					],
-					"desc": "逐段翻译：每50句文本合并发送一次翻译请求，对请求次数或频率限制型API友好，且翻译时会参考上下文；逐句翻译：每句文本都发送一次翻译请求；"
+					"desc": "Paragraph-by-paragraph translation: every 50 sentences of text are combined to send a translation request, which is friendly to the number or frequency-limited API, and the translation will refer to the context; sentence-by-sentence translation: each text sends a translation request;"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.DeepL.Version",
-					"name": "[DeepL] API 模式",
+					"name": "[DeepL] API Modes",
 					"val": "Free",
 					"type": "radios",
 					"items": [
@@ -159,15 +160,15 @@
 							"label": "Pro"
 						}
 					],
-					"desc": "模式二选一"
+					"desc": "Choose one of mode two"
 				},
 				{
 					"id": "@DualSubs.Verify.Settings.DeepL.Auth",
-					"name": "[DeepL] API 认证密钥",
+					"name": "[DeepL] API Authentication key",
 					"val": "",
 					"type": "text",
 					"placeholder": "df4385c2-33de-e423-4134-ca1f7b3ea8b7",
-					"desc": "未提供时不会启用此类型字幕"
+					"desc": "This type of subtitles will not be enabled when not available."
 				}
 			],
 			"author": "@DualSubs",
@@ -181,8 +182,9 @@
 			"id": "DualSubs.Advanced.beta",
 			"name": "🍿️ DualSubs: Advanced Options β",
 			"descs_html": [
-				"请参照<a href=\"https://github.com/DualSubs/DualSubs\">DualSubs</a>的使用说明进行配置",
-				"填写完成后别忘点击此页面底端右下角的\"保存\"。"
+				"Please refer to <a href=\"https://github.com/DualSubs/DualSubs\"> Instructions for using DualSubs</a>",
+
+"Don't forget to click 'Save' in the lower right corner of the bottom of this page after completing."
 			],
 			"keys": [
 				"@DualSubs.Advanced.Settings"
@@ -190,26 +192,26 @@
 			"settings": [
 				{
 					"id": "@DualSubs.Advanced.Settings.Translator.Times",
-					"name": "翻译器: 重试次数",
+					"name": "Translator: Number of retries",
 					"val": "3",
 					"type": "number",
 					"placeholder": "3",
-					"desc": "单位：次，正整数"
+					"desc": "Unit: times, positive integer"
 				},
 				{
 					"id": "@DualSubs.Advanced.Settings.Translator.Interval",
-					"name": "翻译器: 重试间隔时长",
+					"name": "Translator: Retry interval duration",
 					"val": "100",
 					"type": "number",
 					"placeholder": "100",
-					"desc": "单位：毫秒(ms)，正整数"
+					"desc": "Unit: milliseconds (ms), positive integer"
 				},
 				{
 					"id": "@DualSubs.Advanced.Settings.Translator.Exponential",
-					"name": "翻译器: 重试间隔时长递增",
+					"name": "Translator: Increasing retry interval",
 					"val": true,
 					"type": "boolean",
-					"desc": "例如，第一次重试间隔时长1000ms，第二次重试间隔时长2000ms，第三次重试间隔时长4000ms，以此类推"
+					"desc": "For example, the interval between the first retry is 1000ms, the interval between the second retry is 2000ms, and the interval between the third retry is 4000ms, and so on."
 				}
 			],
 			"author": "@DualSubs",
@@ -223,8 +225,9 @@
 			"id": "DualSubs.YouTube.beta",
 			"name": "🍿️ DualSubs: YouTube β",
 			"descs_html": [
-				"请参照<a href=\"https://github.com/DualSubs/DualSubs\">DualSubs</a>的使用说明进行配置",
-				"填写完成后别忘点击此页面底端右下角的\"保存\"。"
+				"Please refer to <a href=\"https://github.com/DualSubs/DualSubs\"> Instructions for using DualSubs</a>",
+
+"Don't forget to click 'Save' in the lower right corner of the bottom of this page after completing."
 			],
 			"keys": [
 				"@DualSubs.YouTube.Settings",
@@ -233,17 +236,17 @@
 			"settings": [
 				{
 					"id": "@DualSubs.YouTube.Settings.Switch",
-					"name": "功能开关",
+					"name": "Function switch",
 					"val": true,
 					"type": "boolean",
-					"desc": "是否启用此平台修改功能"
+					"desc": "Whether to enable this platform modification function"
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.Language",
-					"name": "首选语言（兼容）：",
+					"name": "Preferred language (compatible):",
 					"val": "VI",
 					"type": "selects",
-					"desc": "选择后会将此语言添加为额外的字幕语言",
+					"desc": "After selection, this language will be added as an additional subtitle language.",
 					"items": [
 						{
 							"key": "VI",
@@ -251,68 +254,68 @@
 						},
 						{
 							"key": "ZH",
-							"label": "中文（自动）"
+							"label": "Chinese (automatic)"
 						},
 						{
 							"key": "ZH-HANS",
-							"label": "中文（简体）"
+							"label": "Chinese (Simplified)"
 						},
 						{
 							"key": "ZH-HK",
-							"label": "中文（香港）"
+							"label": "Chinese (Hong Kong)"
 						},
 						{
 							"key": "ZH-HANT",
-							"label": "中文（繁体）"
+							"label": "Chinese (Traditional)"
 						},
 						{
 							"key": "EN",
-							"label": "英语（自动）"
+							"label": "English (automatic)"
 						},
 						{
 							"key": "EN-US",
-							"label": "英语（美国）"
+							"label": "English (US)"
 						},
 						{
 							"key": "EN-US SDH",
-							"label": "英语（美国）[CC]"
+							"label": "English (US)[CC]"
 						},
 						{
 							"key": "ES",
-							"label": "西班牙语（自动）"
+							"label": "Spanish (automatic)"
 						},
 						{
 							"key": "ES-ES",
-							"label": "西班牙语"
+							"label": "Spanish"
 						},
 						{
 							"key": "ES-ES SDH",
-							"label": "西班牙语[CC]"
+							"label": "Spanish[CC]"
 						},
 						{
 							"key": "ES-419",
-							"label": "西班牙语（拉丁美洲）"
+							"label": "Spanish (Latin America)"
 						},
 						{
 							"key": "ES-419 SDH",
-							"label": "西班牙语（拉丁美洲）[CC]"
+							"label": "Spanish (Latin America)[CC]"
 						},
 						{
 							"key": "JA",
-							"label": "日文"
+							"label": "In Japanese"
 						},
 						{
 							"key": "KO",
-							"label": "韩文"
+							"label": "Korean language"
 						}
 					]
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.Type",
-					"name": "字幕类型（兼容）",
+					"name": "Subtitle type (compatible)",
 					"val": "Google",
 					"type": "selects",
-					"desc": "请选择要替换的字幕类型，会为不兼容的播放器替换为此字幕类型",
+					"desc": "Please select the type of subtitle you want to replace, which will be replaced by an incompatible player.",
 					"items": [
 						{
 							"key": "Official",
@@ -362,66 +365,66 @@
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.Translate.ShowOnly",
-					"name": "翻译字幕: 只显示翻译字幕",
+					"name": "Translation subtitles: Only translated subtitles are displayed.",
 					"val": false,
 					"type": "boolean",
-					"desc": "开启后仅显示翻译字幕，不做字幕合并操作"
+					"desc": "After opening, only translated subtitles will be displayed, and no subtitle merging operation will be done."
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.External.URL",
-					"name": "外挂字幕: URL",
+					"name": "Plug-in subtitles: URL",
 					"val": null,
 					"type": "text",
 					"placeholder": "https://www.example.com/subs/123.srt",
-					"desc": "兼容WebVTT和SRT格式字幕"
+					"desc": "Compatible with WebVTT and SRT format subtitles"
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.External.Offset",
-					"name": "外挂字幕: 时间偏移量",
+					"name": "Plug-in subtitles: time offset",
 					"val": 0,
 					"type": "number",
 					"placeholder": "0",
-					"desc": "单位：毫秒(ms)，正负整数"
+					"desc": "Unit: milliseconds (ms), positive and negative integers"
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.External.ShowOnly",
-					"name": "外挂字幕: 只显示外挂字幕",
+					"name": "Plug-in subtitles: Only plug-in subtitles are displayed",
 					"val": false,
 					"type": "boolean",
-					"desc": "开启后仅显示外挂字幕，不做字幕合并操作"
+					"desc": "After opening, only plug-in subtitles will be displayed, and no subtitle merge operation will be done."
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.Position",
-					"name": "双语字幕位置",
+					"name": "Bilingual subtitle location",
 					"val": "Forward",
 					"type": "radios",
 					"items": [
 						{
 							"key": "Forward",
-							"label": "第二行"
+							"label": "The second line"
 						},
 						{
 							"key": "Reverse",
-							"label": "第一行"
+							"label": "The first line"
 						}
 					],
-					"desc": "首选语言所在的行数"
+					"desc": "Number of rows in the preferred language"
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.CacheSize",
-					"name": "播放记录缓存数量",
+					"name": "Number of playback record caches",
 					"val": 3,
 					"type": "number",
 					"placeholder": "3",
-					"desc": "此选项决定同网关、同平台、同时处理和播放的数量，如果仅供本机使用，可以设置为1，如果本机作为网关处理局域网多台设备同时观看播放，建议设置此数值不小于播放设备数"
+					"desc": "This option determines the number of same gateway, same platform, simultaneous processing and playback. If it is only for local use, it can be set to 1. If this machine acts as a gateway to multiple LAN devices to watch and play at the same time, it is recommended to set this value not less than the number of playback devices."
 				},
 				{
 					"id": "@DualSubs.YouTube.Settings.Tolerance",
-					"name": "时间戳公差",
+					"name": "Timestamp tolerance",
 					"val": 1000,
 					"type": "number",
 					"placeholder": "1000",
-					"desc": "单位：毫秒(ms)，正整数，字幕时间戳匹配时容许的误差范围"
+					"desc": "Unit: milliseconds (ms), positive integer, allowable error range when the subtitle timestamp matches"
 				}
 			],
 			"author": "@DualSubs",
